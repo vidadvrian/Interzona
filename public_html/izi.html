@@ -29,10 +29,63 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
 </script>
   <!-- JS includes -->
   <script src="https://webfonts.creativecloud.com/quattrocento-sans:n7,n4,i4:default;quattrocento:n4:default.js" type="text/javascript"></script>
+   <style>
+    #pButton{
+    height:10px;
+    width: 10px;
+    border: none;
+    display:block;
+    vertical-align:top;
+    }
+    .play{background: url('images/play.svg?crc=405062010') no-repeat;
+    height:10px;
+    width: 10px;
+    border: none;
+    display:block;
+    vertical-align:top;
+    cursor: pointer;
+    }
+    .pause{background: url('images/pause.svg') no-repeat;
+    width: 10px;
+    height:10px;
+    border: none;
+    z-index: 120;
+    display:block;
+    vertical-align:top;
+    cursor: pointer;
+
+    }
+    .mainplay{background:url('images/play.svg?crc=405062010') no-repeat;
+    height:15px;
+    width: 15px;
+    border: none;
+    display:block;
+    vertical-align:top;
+    }
+    .mainpause{background:url('images/pause.svg') no-repeat;
+    height:15px;
+    width: 15px;
+    border: none;
+    display:block;
+    vertical-align:top;
+    }
+    
+    
+    
+    
+  </style>
+  
+  
    </head>
  <body>
 
-  <div class="clearfix" id="page"><!-- column -->
+   <audio id="player">
+   </audio>
+   <audio id="mainplayer" preload="true" onended="playNextMainTrack()">
+     <source src="assets/01Principia.mp3" type="audio/mpeg"> 
+   </audio>
+
+   <div class="clearfix" id="page"><!-- column -->
    <div class="clearfix colelem" id="pu396"><!-- group -->
     <a class="nonblock nontext clip_frame grpelem" id="u396" href="index.html"><!-- svg --><img class="svg" id="u392" src="images/logo-a.svg?crc=80796958" width="30" height="30" alt="" data-mu-svgfallback="images/logo%20a_poster_.png?crc=4241372637"/></a>
     <a class="nonblock nontext clip_frame grpelem" id="u410" href="index.html"><!-- svg --><img class="svg" id="u406" src="images/logo-b.svg?crc=10454698" width="280" height="30" alt="" data-mu-svgfallback="images/logo%20b_poster_.png?crc=142356905"/></a>
@@ -54,55 +107,51 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
      <div class="clearfix colelem" id="u4440-4"><!-- content -->
       <p>2015</p>
      </div>
-     <div class="clearfix colelem" id="pbuttonu4779"><!-- group -->
-      <div class="Button shadow clearfix grpelem" id="buttonu4779"><!-- container box -->
-       <div class="clip_frame grpelem" id="u4780"><!-- svg -->
-        <img class="svg" id="u4781" src="images/play.svg?crc=405062010" width="10" height="10" alt="" data-mu-svgfallback="images/play_poster_.png?crc=3846626848"/>
+     <div id="playlist">
+       <div class="clearfix colelem" id="pbuttonu4779"><!-- group -->
+	 <div class="Button shadow clearfix grpelem" id="buttonu4779"><!-- container box -->
+	   <div class="clip_frame grpelem" id="u4780"><!-- svg -->
+	     <button name="assets/01Principia.mp3" class="play"   onClick="playAudio(this)"></button>
+	   </div>
+	   <div class="clip_frame grpelem" id="u4782"><!-- svg -->
+           </div>
+	 </div>
+	 <div class="clearfix grpelem" id="u4441-4"><!-- content -->
+	   <p>1</p>
+	 </div>
+	 <div class="clearfix grpelem" id="u4442-4"><!-- content -->
+	   <p>PRINCIPA</p>
+	 </div>
        </div>
-       <div class="clip_frame grpelem" id="u4782"><!-- svg -->
-        <img class="svg" id="u4783" src="images/pause.svg?crc=54605959" width="10" height="10" alt="" data-mu-svgfallback="images/pause_poster_.png?crc=113585370"/>
+       
+       <div class="clearfix colelem" id="pbuttonu4800"><!-- group -->
+	 <!-- <div class="Button shadow clearfix grpelem" id="buttonu4800"><\!-- container box -\-> -->
+	 <div class="clip_frame grpelem" id="u4801"><!-- svg -->
+           <button name="assets/02Beat.mp3" class="play"  onClick="playAudio(this)"></button>
+	 </div>
+	 <!-- </div> -->
+	 <div class="clearfix grpelem" id="u4682-4"><!-- content -->
+	   <p>2</p>
+	 </div>
+	 <div class="clearfix grpelem" id="u4679-4"><!-- content -->
+	   <p>BEAT</p>
+	 </div>
        </div>
-      </div>
-      <div class="clearfix grpelem" id="u4441-4"><!-- content -->
-       <p>1</p>
-      </div>
-      <div class="clearfix grpelem" id="u4442-4"><!-- content -->
-       <p>PRINCIPA</p>
-      </div>
-     </div>
-     <div class="clearfix colelem" id="pbuttonu4800"><!-- group -->
-      <div class="Button shadow clearfix grpelem" id="buttonu4800"><!-- container box -->
-       <div class="clip_frame grpelem" id="u4801"><!-- svg -->
-        <img class="svg" id="u4802" src="images/play.svg?crc=405062010" width="10" height="10" alt="" data-mu-svgfallback="images/play_poster_.png?crc=3846626848"/>
+       <div class="clearfix colelem" id="pbuttonu4821" ><!-- group -->
+	 <div class="Button shadow clearfix grpelem" id="buttonu4821"><!-- container box -->
+	   <div class="clip_frame grpelem" id="u4822"><!-- svg -->
+	     <button name="assets/03Wake.mp3" class="play"  onClick="playAudio(this)"></button>
+	   </div>
+	 </div>
        </div>
-       <div class="clip_frame grpelem" id="u4803"><!-- svg -->
-        <img class="svg" id="u4804" src="images/pause.svg?crc=54605959" width="10" height="10" alt="" data-mu-svgfallback="images/pause_poster_.png?crc=113585370"/>
+       <div class="clearfix grpelem" id="u4688-4"><!-- content -->
+	 <p>3</p>
        </div>
-      </div>
-      <div class="clearfix grpelem" id="u4682-4"><!-- content -->
-       <p>2</p>
-      </div>
-      <div class="clearfix grpelem" id="u4679-4"><!-- content -->
-       <p>BEAT</p>
-      </div>
-     </div>
-     <div class="clearfix colelem" id="pbuttonu4821"><!-- group -->
-      <div class="Button shadow clearfix grpelem" id="buttonu4821"><!-- container box -->
-       <div class="clip_frame grpelem" id="u4822"><!-- svg -->
-        <img class="svg" id="u4823" src="images/play.svg?crc=405062010" width="10" height="10" alt="" data-mu-svgfallback="images/play_poster_.png?crc=3846626848"/>
-       </div>
-       <div class="clip_frame grpelem" id="u4824"><!-- svg -->
-        <img class="svg" id="u4825" src="images/pause.svg?crc=54605959" width="10" height="10" alt="" data-mu-svgfallback="images/pause_poster_.png?crc=113585370"/>
-       </div>
-      </div>
-      <div class="clearfix grpelem" id="u4688-4"><!-- content -->
-       <p>3</p>
-      </div>
       <div class="clearfix grpelem" id="u4685-4"><!-- content -->
-       <p>WAKE</p>
+	<p>WAKE</p>
       </div>
      </div>
-     <div class="colelem" id="u4443"><!-- simple frame --></div>
+    <div class="colelem" id="u4443"><!-- simple frame --></div>
      <div class="clearfix colelem" id="pu4436-4"><!-- group -->
       <div class="clearfix grpelem" id="u4436-4"><!-- content -->
        <p id="u4436-2">リリース</p>
@@ -140,13 +189,10 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
      </div>
      <div class="colelem" id="u4447"><!-- simple frame --></div>
      <div class="clearfix colelem" id="pbuttonu4568"><!-- group -->
-      <a class="nonblock nontext Button shadow clearfix grpelem" id="buttonu4568" href="assets/izi.rar"><!-- container box --><div class="clip_frame grpelem" id="u4575"><!-- svg --><img class="svg" id="u4571" src="images/down.svg?crc=4132535926" width="15" height="15" alt="" data-mu-svgfallback="images/down_poster_.png?crc=328199278"/></div><div class="clip_frame grpelem" id="u4857"><!-- svg --><img class="svg" id="u4853" src="images/downa.svg?crc=4237501815" width="15" height="15" alt="" data-mu-svgfallback="images/downa_poster_.png?crc=3761387096"/></div></a>
+       <a class="nonblock nontext Button shadow clearfix grpelem" id="buttonu4568" href="assets/izi.rar"><!-- container box --><div class="clip_frame grpelem" id="u4575"><!-- svg --><img class="svg" id="u4571" src="images/down.svg?crc=4132535926" width="15" height="15" alt="" data-mu-svgfallback="images/down_poster_.png?crc=328199278"/></div><div class="clip_frame grpelem" id="u4857"><!-- svg --><img class="svg" id="u4853" src="images/downa.svg?crc=4237501815" width="15" height="15" alt="" data-mu-svgfallback="images/downa_poster_.png?crc=3761387096"/></div></a>
       <div class="Button shadow clearfix grpelem" id="buttonu4596"><!-- container box -->
        <div class="clip_frame grpelem" id="u4612"><!-- svg -->
-        <img class="svg" id="u4608" src="images/play.svg?crc=405062010" width="15" height="15" alt="" data-mu-svgfallback="images/play_poster_.png?crc=3846626848"/>
-       </div>
-       <div class="clip_frame grpelem" id="u4730"><!-- svg -->
-        <img class="svg" id="u4726" src="images/pause.svg?crc=54605959" width="15" height="15" alt="" data-mu-svgfallback="images/pause_poster_.png?crc=113585370"/>
+         <button id="MainButton" class="mainplay"  onClick="playMainAudio(this)"></button>
        </div>
       </div>
       <div class="Button transition clearfix grpelem" id="buttonu4631"><!-- container box -->
@@ -212,7 +258,8 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
   <script type="text/javascript">
    // Decide weather to suppress missing file error or not based on preference setting
 var suppressMissingFileError = false
-</script>
+  </script>
+  <script src="scripts/zonaplayer.js"></script>
   <script type="text/javascript">
    window.Muse.assets.check=function(d){if(!window.Muse.assets.checked){window.Muse.assets.checked=!0;var b={},c=function(a,b){if(window.getComputedStyle){var c=window.getComputedStyle(a,null);return c&&c.getPropertyValue(b)||c&&c[b]||""}if(document.documentElement.currentStyle)return(c=a.currentStyle)&&c[b]||a.style&&a.style[b]||"";return""},a=function(a){if(a.match(/^rgb/))return a=a.replace(/\s+/g,"").match(/([\d\,]+)/gi)[0].split(","),(parseInt(a[0])<<16)+(parseInt(a[1])<<8)+parseInt(a[2]);if(a.match(/^\#/))return parseInt(a.substr(1),
 16);return 0},g=function(g){for(var f=document.getElementsByTagName("link"),h=0;h<f.length;h++)if("text/css"==f[h].type){var i=(f[h].href||"").match(/\/?css\/([\w\-]+\.css)\?crc=(\d+)/);if(!i||!i[1]||!i[2])break;b[i[1]]=i[2]}f=document.createElement("div");f.className="version";f.style.cssText="display:none; width:1px; height:1px;";document.getElementsByTagName("body")[0].appendChild(f);for(h=0;h<Muse.assets.required.length;){var i=Muse.assets.required[h],l=i.match(/([\w\-\.]+)\.(\w+)$/),k=l&&l[1]?
