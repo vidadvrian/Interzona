@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://interzona.in/index.html</loc>
-    <lastmod>2018-01-22</lastmod>
+    <lastmod>2018-01-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <image:image>
@@ -10,6 +10,18 @@
     </image:image>
     <image:image>
       <image:loc>http://interzona.in/images/logo-b.svg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://interzona.in/images/iziiia.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://interzona.in/images/iziiia_2x.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://interzona.in/images/iziia.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://interzona.in/images/iziia_2x.jpg</image:loc>
     </image:image>
     <image:image>
       <image:loc>http://interzona.in/images/izia.jpg</image:loc>
@@ -20,7 +32,7 @@
   </url>
   <url>
     <loc>http://interzona.in/izi.html</loc>
-    <lastmod>2018-01-22</lastmod>
+    <lastmod>2018-01-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <image:image>
@@ -49,8 +61,80 @@
     </image:image>
   </url>
   <url>
-    <loc>http://interzona.in/assets/izi.rar</loc>
+    <loc>http://interzona.in/izii.html</loc>
+    <lastmod>2018-01-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <image:image>
+      <image:loc>http://interzona.in/images/logo-a.svg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://interzona.in/images/logo-b.svg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://interzona.in/images/play.svg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://interzona.in/images/pause.svg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://interzona.in/images/down.svg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://interzona.in/images/downa.svg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://interzona.in/images/iziib.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://interzona.in/images/iziib_2x.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>http://interzona.in/iziii.html</loc>
+    <lastmod>2018-01-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <image:image>
+      <image:loc>http://interzona.in/images/logo-a.svg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://interzona.in/images/logo-b.svg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://interzona.in/images/play.svg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://interzona.in/images/pause.svg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://interzona.in/images/down.svg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://interzona.in/images/downa.svg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://interzona.in/images/iziiib.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://interzona.in/images/iziiib_2x.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>http://interzona.in/assets/izii.rar</loc>
     <lastmod>2017-06-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://interzona.in/assets/izi.rar</loc>
+    <lastmod>2018-01-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://interzona.in/assets/iziii.rar</loc>
+    <lastmod>2018-01-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
