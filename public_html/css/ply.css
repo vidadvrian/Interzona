@@ -1,0 +1,39 @@
+#pButton{
+    height:10px;
+    width: 10px;
+    border: none;
+    display:block;
+    vertical-align:top;
+    }
+    .play{background: url('../images/playa.svg') no-repeat;
+    height:10px;
+    width: 10px;
+    border: none;
+    display:block;
+    vertical-align:top;
+    cursor: pointer;
+    }
+    .pause{background: url('../images/pause.svg') no-repeat;
+    width: 10px;
+    height:10px;
+    border: none;
+    z-index: 120;
+    display:block;
+    vertical-align:top;
+    cursor: pointer;
+
+    }
+    .mainplay{background:url('../images/play.svg') no-repeat;
+    height:15px;
+    width: 15px;
+    border: none;
+    display:block;
+    vertical-align:top;
+    }
+    .mainpause{background:url('../images/pause.svg') no-repeat;
+    height:15px;
+    width: 15px;
+    border: none;
+    display:block;
+    vertical-align:top;
+    }
