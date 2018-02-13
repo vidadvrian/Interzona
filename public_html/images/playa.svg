@@ -3,19 +3,19 @@
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 30 30" style="enable-background:new 0 0 30 30;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#252525;}
-	.st1{fill:#E1E1E1;}
+	.st0{display:none;}
+	.st1{display:inline;fill:#FFFFFF;}
+	.st2{fill:#272727;}
 </style>
-<g id="BG">
-	<rect class="st0" width="30" height="30"/>
+<g id="BG" class="st0">
+	<rect y="0" class="st1" width="30" height="30"/>
 </g>
-<g id="BG2">
-	<rect x="5" y="5" class="st0" width="20" height="20"/>
+<g id="BG2" class="st0">
+	<rect x="5" y="5" class="st1" width="20" height="20"/>
 </g>
-<g id="Pause">
+<g id="PLAY">
 	<g>
-		<rect x="7.9" y="5" class="st1" width="4.7" height="20"/>
-		<rect x="17.3" y="5" class="st1" width="4.7" height="20"/>
+		<polygon class="st2" points="24.3,15 7.1,5 7.1,25 		"/>
 	</g>
 </g>
 </svg>
